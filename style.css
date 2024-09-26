@@ -1,0 +1,157 @@
+*{
+
+box-sizing: border-box;
+
+}
+header{
+
+background-color: olive;
+height: 50px;
+border: solid black 3px;
+
+}
+
+body{
+
+background-color: green;
+margin: auto;
+}
+
+
+
+
+#rectanglesandcircle{
+    float: left;
+    width: 100%; /*display, dzięki któremu koło stoi obok prostokątów NIE RUSZAJ !!!*/
+    display: flex;
+    gap: 35px; 
+    #rectangles{
+        display: flex;
+        flex-direction: column; /*display, dzięki któremu koło stoi obok prostokątów NIE RUSZAJ !!!*/
+        }
+    #rectangle1{
+
+        width: 100px;
+        height: 15px;
+        background-color: blue;
+        border: 3px solid black;
+        margin-top: 20px;
+        margin-left: 15px;        
+    }
+        
+    #rectangle{
+
+        width: 100px;
+        height: 15px;
+        background-color: blue;
+        border: 3px solid black;
+        margin-top: 20px;
+        margin-left: 15px;
+        }
+            
+    #circle{
+        background-color: darkcyan;
+        border: 3px solid black;
+        border-radius: 50%;
+        width: 80px;
+        height: 70px;
+        margin-top: 10px;
+        }   
+}
+
+#rhombuses{
+    width: 100%;
+    float: left;
+
+    #rhombus1{
+
+        background-color: red;
+        width: 100px;
+        height: 100px;
+        transform: rotate(45deg);
+        margin-left: 140px;
+        margin-top: 35px;
+        border: 3px solid black;
+       
+       }
+       #rhombus{
+       
+           background-color: red;
+           width: 100px;
+           height: 100px;
+           transform: rotate(45deg);
+           margin-left: 40px;
+           margin-bottom: 35px;
+           border: 3px solid black;
+       }
+
+}
+
+#ABCsection{
+    float: left;
+    width: 100%;
+    #ABC{
+        
+        border: 3px solid black;
+        height: 500px;
+        width: 200px;
+        padding: 20px;
+        margin-left: 50px;
+        text-align: center;
+        font-size: 40px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-bottom: 30px;
+        
+        }
+            
+}    
+
+@media screen and (max-width: 583px) {
+    #rhombuses,#rectanglesandcircle,#ABCsection {
+        width: 100%;
+        float: left;
+} 
+}
+@media screen and (max-width: 583px) {  /* 583 px breakpoint */
+    #ABC {
+        background-color: blue;
+        margin-top: 30px;
+        
+}
+}
+@media screen and (min-width: 583px) and (max-width: 900px) {
+    #rhombuses,#rectanglesandcircle,#ABCsection {
+        width: 50%;
+    } 
+}
+
+@media screen and (min-width: 583px) and (max-width: 900px) {   /* 583px - 900px breakpoint */
+    #ABC {
+        background-color: #d44534; /*nastąpiło szukanie koloru próbkowaniem */
+        margin-top: -240px; /* nienajlepsze rozwiązanie, ale działa -_- */
+
+}
+}
+@media screen and (min-width: 583px) and (max-width: 900px) {
+    #rectanglesandcircle{
+        clear: left; /* koła i prostokąty zostają w miejscu przy drugim breakpoincie dzięki temu */
+        
+}   
+}
+@media screen and (min-width: 900px) {
+    #ABC {
+        background-color: white;
+        margin-top: 30px;
+}
+}
+@media screen and (min-width: 900px) {
+    #rhombuses,#rectanglesandcircle,#ABCsection {  /* 900 px breakpoint */
+width: 33%;
+} 
+}
+@media screen and (min-width: 900px) {
+    #rectanglesandcircle{
+        margin-top: 150px;
+        
+}   
+}
