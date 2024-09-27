@@ -24,7 +24,7 @@ margin: auto;
 #rectanglesandcircle{
 
     float: left;
-    width: 100%; /*display, dzięki któremu koło stoi obok prostokątów NIE RUSZAJ !!!*/
+    width: 100%; /*display, makes the circle sit next to the rectangles DO NOT TOUCH !!!*/
     display: flex;
     gap: 35px;
 }
@@ -32,7 +32,7 @@ margin: auto;
 #rectangles{
 
 display: flex;
-flex-direction: column; /*display, dzięki któremu koło stoi obok prostokątów NIE RUSZAJ !!!*/
+flex-direction: column; /*display, makes the circle sit next to the rectangles DO NOT TOUCH !!!*/
         
 }
 
@@ -152,8 +152,8 @@ flex-direction: column; /*display, dzięki któremu koło stoi obok prostokątó
 
     #ABC {
 
-        background-color: #d44534; /*nastąpiło szukanie koloru próbkowaniem */
-        margin-top: -240px; /* nienajlepsze rozwiązanie, ale działa -_- */
+        background-color: #d44534; /*this one was hard to find */
+        margin-top: -240px; /* not the best solution, but it works -_- */
 
     }
 }
@@ -162,7 +162,7 @@ flex-direction: column; /*display, dzięki któremu koło stoi obok prostokątó
 
     #rectanglesandcircle{
 
-        clear: left; /* koła i prostokąty zostają w miejscu przy drugim breakpoincie dzięki temu */
+        clear: left; /* thanks to this, the circle and rectangles stay to the left on the second breakpoint */
         
     }   
 }
